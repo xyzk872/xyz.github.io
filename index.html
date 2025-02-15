@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUSION GADGETS</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/logo.png" alt="Store Logo" class="store-logo"> FUSION GADGETS
+      </a>
+      <button class="cart-button" tabindex="0" aria-label="Open Cart">
+        🛒 <span id="cart-count" class="cart-badge">0</span>
+      </button>
+    </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title gradient-text">Discover the Future of Tech</h1>
+      <p class="hero-subtitle">
+        Explore our latest collection of futuristic gadgets and innovations.
+      </p>
+      <a href="#products" class="button">Shop Now</a>
+    </div>
+  </section>
+
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <!-- The products-grid container is dynamically filled by scripts.js -->
+      <div class="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- CART DRAWER -->
+  <div class="cart-drawer">
+    <div class="cart-drawer-content">
+      <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <button class="close-button" tabindex="0" aria-label="Close Cart">✖</button>
+      </div>
+      <div class="cart-items">
+        <p>Your cart is empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotalAmount">₹0.00</span>
+        </div>
+        <button class="button checkout-button" tabindex="0" aria-label="Checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION MODAL -->
+  <div id="notification-modal" class="notification-modal">
+    <div class="notification-content">
+      <span class="close-notification" tabindex="0" aria-label="Close Notification">&times;</span>
+      <p class="notification-message">Your cart is empty.</p>
+      <button class="notification-button" tabindex="0" aria-label="OK">OK</button>
+    </div>
+  </div>
+
+  <!-- IMAGE POPUP MODAL -->
+  <div id="image-popup-modal" class="image-popup-modal">
+    <div class="popup-content">
+      <button class="close-popup" tabindex="0" aria-label="Close Popup">&times;</button>
+      <img id="popup-image" src="" alt="Product Image">
+      <button class="popup-nav-button" id="popup-prev-button" tabindex="0" aria-label="Previous Image">&lt;</button>
+      <button class="popup-nav-button" id="popup-next-button" tabindex="0" aria-label="Next Image">&gt;</button>
+    </div>
+  </div>
+
+  <footer>
+    <section id="contact" class="contact-details">
+        <h2>Contact Us</h2>
+        <p>Address: 3/4, Bazdaripura, Bahraich (Uttar Pradesh)-271801</p>
+        <p>Phone: +918858763010</p>
+        <p>Email: <a href="mailto:store.fusiongadgets271801@gmail.com">store.fusiongadgets271801@gmail.com</a></p>
+    </section>
+</footer>
+
+  <!-- JAVASCRIPT -->
+  <script defer src="scripts.js"></script>
+  
+</body>
+</html>
